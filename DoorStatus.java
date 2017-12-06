@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 public class DoorStatus {
 
-    public boolean revolvingdoortype = false;
+    public boolean revolvingdoortype = false;  //true为旋转门；false为标准平滑门
 
     //自动门状态：灯光状态、锁闭状态、连接状态、当前动行模式、故障代码
     public boolean light_status = false;
