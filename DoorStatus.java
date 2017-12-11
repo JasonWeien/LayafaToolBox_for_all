@@ -97,7 +97,10 @@ public class DoorStatus {
     //VFD 通信
     public int vfd_communication_flag = 0;
 
-
+    //平滑门开门命令
+    public void OpenDoor(Activity activity,boolean flag){
+            MainActivity.bluetoothComm.SendMessage(MainActivity.bluetoothComm.commandLafaya.SendLafayaOpendoor(CommandLafaya.sendslidingID),activity);
+    }
 
     //打开/关闭灯光
     public void lightTurnOn_Off(Activity activity,boolean flag){
