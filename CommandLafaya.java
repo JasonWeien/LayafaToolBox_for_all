@@ -832,6 +832,9 @@ public class CommandLafaya {
 
     //公用命令
     //运行模式查询设置0xC2，无参数或带1个参数
+
+    //0xC2：门运动模式修改命令，发送0x7E+0xMG+0xC2+参数字1+校验字+0x0D，接收0x7E+0xGM+0xC2+参数字1+校验字+0x0D；
+    //参数描述：0x00（单向），0x02（自动），0x04（常闭），0x08（常开）
     public String SendLafayaRummode(char addrs, int data,boolean flag){
         if(flag) {
             char[] msg;
