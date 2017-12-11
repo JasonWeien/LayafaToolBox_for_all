@@ -120,10 +120,11 @@ public class PageHomelayout {
 
             }
         });
-        //
+        //主界面开门按钮
         image_home_mode.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                MainActivity.doorStatus.OpenDoor(activity,true);
                 if(!home_check_flag){
                     CheckStatusStart(handler);
                 }
