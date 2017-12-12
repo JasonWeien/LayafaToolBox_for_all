@@ -2,6 +2,8 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/app/src/main/java/com/lafaya/toolbox" vcs="Git" />
+    <mapping directory="D:\C\AppData\AndroidStudioProjects\LayafaToolBox_for_all\LayafaToolBox_for_all" vcs="Git" />
   </component>
 </project>
