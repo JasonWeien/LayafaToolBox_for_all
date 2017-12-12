@@ -840,19 +840,19 @@ public class CommandLafaya {
             char[] msg;
             switch (data){
                 case 0://auto
-                    msg = new char[]{addrs,cmd_runmode, 0x02};
+                    msg = new char[]{addrs,cmd_runmode, 0x08};  //对应常开模式
                     break;
                 case 1://open
-                    msg = new char[]{addrs,cmd_runmode, 0x08};
+                    msg = new char[]{addrs,cmd_runmode, 0x04};   //对应常闭模式
                     break;
                 case 2://close
-                    msg = new char[]{addrs,cmd_runmode, 0x04};
+                    msg = new char[]{addrs,cmd_runmode, 0x02};   //对应自动模式
                     break;
                 case 3://exit
-                    msg = new char[]{addrs,cmd_runmode, 0x01};
+                    msg = new char[]{addrs,cmd_runmode, 0x01};   //对应单向模式？
                     break;
                 default:
-                    msg = new char[]{addrs,cmd_runmode, 0x02};
+                    msg = new char[]{addrs,cmd_runmode, 0x02};   //默认自动模式
                     break;
             }
 
